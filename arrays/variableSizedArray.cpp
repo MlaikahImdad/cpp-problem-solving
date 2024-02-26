@@ -5,8 +5,9 @@
 #include <algorithm>
 using namespace std;
 
-// FIRST METHOD USING ARRAYS
+
 int main() {
+    // FIRST METHOD USING ARRAYS
     int n, q, size;
     cin >> n >> q;
     int **array_ = new int*[n];
@@ -29,14 +30,7 @@ int main() {
     }
     delete [] array_;
     
-    return 0;
-}
-
-// SECOND METHOD USING VECTORS
-
-
-int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    // SECOND METHOD USING VECTORS
     int n, q;
     cin >> n >> q;
     vector<vector<int>> data;
@@ -58,6 +52,5 @@ int main() {
         cin >> row >> column;
         cout << data[row][column] << "\n";
     }
-    
     return 0;
 }
